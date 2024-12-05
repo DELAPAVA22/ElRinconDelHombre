@@ -1,0 +1,97 @@
+.car-card {
+  border: 3px solid #0c0c0c;
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px; /* Ancho fijo de cada tarjeta */
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9f9f9;
+  margin-bottom: 20px; /* Espacio debajo de cada tarjeta */
+  box-sizing: border-box; /* Asegura que el padding y el border no afecten al ancho total */
+}
+
+.car-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.car-details {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.car-details li {
+  margin: 5px 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #000000;
+  color: #09ff00;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos del contenedor de las tarjetas */
+.car-cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten a la siguiente línea si es necesario */
+  justify-content: space-evenly; /* Distribuye las tarjetas uniformemente */
+  gap: 20px; /* Espacio entre las tarjetas */
+  padding: 20px; /* Espacio interno alrededor de las tarjetas */
+  width: 100%; /* Asegura que el contenedor ocupe todo el espacio disponible */
+}
+
+.car-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Fondo gris para toda la página */
+body {
+  background-color: #363636; /* Gris claro */
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Estilo para el header */
+header {
+  background-color: #000; /* Fondo negro */
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-left,
+.header-right {
+  color: #fff; /* Texto blanco */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header-right span {
+  margin-left: 20px; /* Separación entre Contacto y Nosotros */
+  cursor: pointer;
+}
+
+.header-right span:hover {
+  text-decoration: underline; /* Efecto al pasar el cursor */
+}
